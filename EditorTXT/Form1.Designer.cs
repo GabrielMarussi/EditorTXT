@@ -1,5 +1,4 @@
-﻿
-namespace EditorTXT
+﻿namespace EditorTXT
 {
     partial class Form1
     {
@@ -169,59 +168,59 @@ namespace EditorTXT
             // mEditarDesfazer
             // 
             this.mEditarDesfazer.Name = "mEditarDesfazer";
-            this.mEditarDesfazer.Size = new System.Drawing.Size(180, 26);
+            this.mEditarDesfazer.Size = new System.Drawing.Size(166, 26);
             this.mEditarDesfazer.Text = "Desfazer";
             this.mEditarDesfazer.Click += new System.EventHandler(this.mEditarDesfazer_Click);
             // 
             // mEditarRefazer
             // 
             this.mEditarRefazer.Name = "mEditarRefazer";
-            this.mEditarRefazer.Size = new System.Drawing.Size(180, 26);
+            this.mEditarRefazer.Size = new System.Drawing.Size(166, 26);
             this.mEditarRefazer.Text = "Refazer";
             this.mEditarRefazer.Click += new System.EventHandler(this.mEditarRefazer_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(163, 6);
             // 
             // mEditarRecortar
             // 
             this.mEditarRecortar.Name = "mEditarRecortar";
-            this.mEditarRecortar.Size = new System.Drawing.Size(180, 26);
+            this.mEditarRecortar.Size = new System.Drawing.Size(166, 26);
             this.mEditarRecortar.Text = "Recortar";
             this.mEditarRecortar.Click += new System.EventHandler(this.mEditarRecortar_Click);
             // 
             // mEditarCopiar
             // 
             this.mEditarCopiar.Name = "mEditarCopiar";
-            this.mEditarCopiar.Size = new System.Drawing.Size(180, 26);
+            this.mEditarCopiar.Size = new System.Drawing.Size(166, 26);
             this.mEditarCopiar.Text = "Copiar";
             this.mEditarCopiar.Click += new System.EventHandler(this.mEditarCopiar_Click);
             // 
             // mEditarColar
             // 
             this.mEditarColar.Name = "mEditarColar";
-            this.mEditarColar.Size = new System.Drawing.Size(180, 26);
+            this.mEditarColar.Size = new System.Drawing.Size(166, 26);
             this.mEditarColar.Text = "Colar";
             this.mEditarColar.Click += new System.EventHandler(this.mEditarColar_Click);
             // 
             // mEditarExcluir
             // 
             this.mEditarExcluir.Name = "mEditarExcluir";
-            this.mEditarExcluir.Size = new System.Drawing.Size(180, 26);
+            this.mEditarExcluir.Size = new System.Drawing.Size(166, 26);
             this.mEditarExcluir.Text = "Excluir";
             this.mEditarExcluir.Click += new System.EventHandler(this.mEditarExcluir_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(163, 6);
             // 
             // mEditarDH
             // 
             this.mEditarDH.Name = "mEditarDH";
-            this.mEditarDH.Size = new System.Drawing.Size(180, 26);
+            this.mEditarDH.Size = new System.Drawing.Size(166, 26);
             this.mEditarDH.Text = "Data e Hora";
             this.mEditarDH.Click += new System.EventHandler(this.mEditarDH_Click);
             // 
@@ -236,15 +235,20 @@ namespace EditorTXT
             // 
             // mFormatarQuebraLinha
             // 
+            this.mFormatarQuebraLinha.Checked = true;
+            this.mFormatarQuebraLinha.CheckOnClick = true;
+            this.mFormatarQuebraLinha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mFormatarQuebraLinha.Name = "mFormatarQuebraLinha";
             this.mFormatarQuebraLinha.Size = new System.Drawing.Size(284, 26);
             this.mFormatarQuebraLinha.Text = "Quebra automática de Linha";
+            this.mFormatarQuebraLinha.Click += new System.EventHandler(this.mFormatarQuebraLinha_Click);
             // 
             // mFormatarFonte
             // 
             this.mFormatarFonte.Name = "mFormatarFonte";
             this.mFormatarFonte.Size = new System.Drawing.Size(284, 26);
             this.mFormatarFonte.Text = "Fonte";
+            this.mFormatarFonte.Click += new System.EventHandler(this.mFormatarFonte_Click);
             // 
             // mExibir
             // 
@@ -270,18 +274,21 @@ namespace EditorTXT
             this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
             this.mExibirZoomAmpliar.Size = new System.Drawing.Size(149, 26);
             this.mExibirZoomAmpliar.Text = "Ampliar";
+            this.mExibirZoomAmpliar.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
             // 
             // mExibirZoomReduzir
             // 
             this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
             this.mExibirZoomReduzir.Size = new System.Drawing.Size(149, 26);
             this.mExibirZoomReduzir.Text = "Reduzir";
+            this.mExibirZoomReduzir.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
             // 
             // mExibirZoomRestaurar
             // 
             this.mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
             this.mExibirZoomRestaurar.Size = new System.Drawing.Size(149, 26);
             this.mExibirZoomRestaurar.Text = "Restaurar";
+            this.mExibirZoomRestaurar.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
             // mExibirBarraStatus
             // 
@@ -291,6 +298,7 @@ namespace EditorTXT
             this.mExibirBarraStatus.Name = "mExibirBarraStatus";
             this.mExibirBarraStatus.Size = new System.Drawing.Size(190, 26);
             this.mExibirBarraStatus.Text = "Barra de Status";
+            this.mExibirBarraStatus.Click += new System.EventHandler(this.mExibirBarraStatus_Click);
             // 
             // mAjuda
             // 
@@ -306,12 +314,14 @@ namespace EditorTXT
             this.mAjudaExibir.Name = "mAjudaExibir";
             this.mAjudaExibir.Size = new System.Drawing.Size(214, 26);
             this.mAjudaExibir.Text = "Exibir Ajuda";
+            this.mAjudaExibir.Click += new System.EventHandler(this.mAjudaExibir_Click);
             // 
             // mAjudaSobre
             // 
             this.mAjudaSobre.Name = "mAjudaSobre";
             this.mAjudaSobre.Size = new System.Drawing.Size(214, 26);
             this.mAjudaSobre.Text = "Sobre o EditorTXT";
+            this.mAjudaSobre.Click += new System.EventHandler(this.mAjudaSobre_Click);
             // 
             // statusBar
             // 

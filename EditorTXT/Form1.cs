@@ -230,5 +230,79 @@ namespace EditorTXT
 
         #endregion
 
+        #region Menu Formatar
+        private void mFormatarQuebraLinha_Click(object sender, EventArgs e) => txtConteudo.WordWrap = mFormatarQuebraLinha.Checked;
+
+        private void mFormatarFonte_Click(object sender, EventArgs e)
+        {
+            FontDialog Fonte = new FontDialog();
+            Fonte.ShowColor = true;
+            Fonte.ShowEffects = true;
+
+            Fonte.Font = txtConteudo.Font;
+            Fonte.Color = txtConteudo.ForeColor;
+
+            DialogResult result = Fonte.ShowDialog();
+
+            if(result == DialogResult.OK)
+            {
+                txtConteudo.Font = Fonte.Font;
+                txtConteudo.ForeColor = Fonte.Color;
+            }
+        }
+
+        #endregion
+
+        #region Menu Exibir
+
+        #region Submenu Zoom
+
+        private void mExibirZoomAmpliar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor += 0.1f;
+            AtualizarZoomLabel(txtConteudo.ZoomFactor);
+        }
+
+        private void mExibirZoomReduzir_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor -= 0.1f;
+            AtualizarZoomLabel(txtConteudo.ZoomFactor);
+        }
+
+        private void mExibirZoomRestaurar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor = 1;
+            AtualizarZoomLabel(txtConteudo.ZoomFactor);
+        }
+
+        private void AtualizarZoomLabel(float Zoom)
+        {
+            statusBarLabel.Text = $"{(Zoom * 100)}%";
+        }
+
+        #endregion
+
+        private void mExibirBarraStatus_Click(object sender, EventArgs e)
+        {
+            statusBar.Visible = mExibirBarraStatus.Checked;
+        }
+
+        #endregion
+
+        #region Menu Ajuda
+        private void mAjudaExibir_Click(object sender, EventArgs e)
+        {
+            FormAjuda form = new FormAjuda();
+            form.Show();
+        }
+
+        private void mAjudaSobre_Click(object sender, EventArgs e)
+        {
+            FormSobre form = new FormSobre();
+            form.Show();
+        }
+
+        #endregion
+
     }
 }
